@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('price')->nullable();
             $table->text('discount_price')->nullable();
             $table->text('sort_order')->nullable();
-            $table->text('status')->default('active');
+            $table->string('status')->default('active');
 
             $table->timestamps();
         });

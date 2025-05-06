@@ -51,7 +51,6 @@ class ServicesController extends Controller
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('images', 'public'); // Save image to 'storage/app/public/images'
             $validatedData['image'] = $imagePath;
-            dd($validatedData['image']);
         }
 
         // Create a new service
